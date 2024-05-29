@@ -238,11 +238,7 @@ button {
 }
 
 .read_more {
-
      font-size: 18px;
-
-     font-size: 17px;
-
      text-transform: uppercase;
      transition: ease-in all 0.5s;
      font-weight: bold;
@@ -266,10 +262,7 @@ button {
      margin-bottom: -16px;
      position: relative;
      z-index: -1;
-main
      left: 130px;
-     left: 49px;
-main
      opacity: 0;
      transition: ease-in all 0.5s;
 }
@@ -401,11 +394,7 @@ ul.email li a {
 ul.email li i {
      color: #5e5d5e;
      font-size: 19px;
-main
 } 
-
-}
-main
 
 /** end header **/
 
@@ -447,10 +436,8 @@ main
      float: right;
      text-align: left;
      width: 100%;
-main
      margin-top: 65px;
      margin-bottom: 35px;
-main
 }
 
 .relative h3 {
@@ -513,10 +500,7 @@ main
      height: 57%;
      width: 57%;
      margin-top: 40px;
-main
      margin-left: 88px;
-     margin-left: 120px;
-main
 }
 
 
