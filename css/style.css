@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -43,14 +44,13 @@ html {
 
 body {
      color: #666666;
-     font-size: 14px;
-     font-family: 'Poppins', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
+     font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-style: normal;
 }
 
 a {
-     color: #4F6F52;
+     color: #1f1f1f;
      text-decoration: none !important;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
@@ -114,7 +114,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #4F6F52;
+     color: #212121;
      text-decoration: none!important;
      opacity: 1
 }
@@ -208,10 +208,11 @@ button {
 .full {
      float: left;
      width: 100%;
+     flex: content;
 }
 
 .full {
-     width: 100%;
+     width: auto;
      float: left;
      margin: 0;
      padding: 0;
@@ -223,7 +224,7 @@ button {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #4F6F52;
+     color: #2b2b2b;
      line-height: 60px;
      font-weight: bold;
      padding: 0;
@@ -237,11 +238,11 @@ button {
 }
 
 .read_more {
-     font-size: 17px;
+     font-size: 18px;
      text-transform: uppercase;
      transition: ease-in all 0.5s;
      font-weight: bold;
-     color: #4F6F52;
+     color: #2b2b2b;
      z-index: 999;
      position: relative;
 }
@@ -253,7 +254,7 @@ button {
 
 .read_more:before {
      content: "";
-     width: 0px;
+     width: 0px;    
      height: 1px;
      border: #4F6F52 solid 1px;
      transition: all 0.2s linear;
@@ -261,7 +262,7 @@ button {
      margin-bottom: -16px;
      position: relative;
      z-index: -1;
-     left: 104px;
+     left: 130px;
      opacity: 0;
      transition: ease-in all 0.5s;
 }
@@ -364,8 +365,6 @@ z-index: 999;
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #fff;
-     background: #4F6F52;
 }
 
 .di_no {
@@ -395,8 +394,7 @@ ul.email li a {
 ul.email li i {
      color: #5e5d5e;
      font-size: 19px;
-}
-
+} 
 
 /** end header **/
 
@@ -438,13 +436,15 @@ ul.email li i {
      float: right;
      text-align: left;
      width: 100%;
+     margin-top: 65px;
+     margin-bottom: 35px;
 }
 
 .relative h3 {
      padding-top: 60px;
      font-size: 70px;
      line-height: 85px;
-     color: #4F6F52;
+     color: #2b2b2b;
      font-weight: bold;
      padding-bottom: 60px;
 }
@@ -466,7 +466,7 @@ ul.email li i {
 #carouselExampleIndicators .carousel-control-next {
      width: 66px;
      height: 66px;
-     background-color: #919191;
+     background-color: #524C42;
      color: #fff;
      font-size: 15px;
      opacity: 1;
@@ -497,6 +497,10 @@ ul.email li i {
 
 .banner_img figure {
      margin: 0;
+     height: 57%;
+     width: 57%;
+     margin-top: 40px;
+     margin-left: 88px;
 }
 
 
@@ -512,7 +516,7 @@ ul.email li i {
 .class .titlepage p {
      font-size: 17px;
      padding-top: 15px;
-     color: #4F6F52;
+     color: #2b2b2b;
 }
 
 .class_box {
@@ -540,7 +544,7 @@ ul.email li i {
 }
 
 .blue {
-     background: #919191;
+     background: #524C42;
 }
 
 .margi_bottom {
@@ -553,24 +557,33 @@ ul.email li i {
 
 /** about section **/
 
-.about {
-     background: url(../images/about_bg.jpg);
+.about .container-fluid{
+     /**background: /**url(../images/landscape-satu.jpeg);**/
      background-size: cover;
      background-position: center center;
      background-repeat: no-repeat;
      background-attachment: fixed;
      padding-top: 90px;
+     padding-bottom: 90px;
+     background-color: #524C42;
+     filter: brightness();
+}
+
+.about::before {
+     
 }
 
 .about .titlepage {
      padding-bottom: 0;
      max-width: 554px;
      float: right;
+     filter: none;
 }
 
 .about .titlepage h2 {
      padding-bottom: 30px;
      color: #fff;
+     filter:drop-shadow(5);
 }
 
 .about .titlepage p {
@@ -581,23 +594,12 @@ ul.email li i {
      padding-bottom: 29px;
 }
 
-.about_img figure {
-     margin: 0;
-}
-
-.about_img figure img {
-     width: 100%;
-     margin-bottom: -11px;
-}
-
 .about .read_more {
      color: #fff;
-     background: #919191;
 }
 
 .about .read_more:hover {
      color: #4F6F52;
-     background: #919191;
 }
 
 
@@ -615,7 +617,7 @@ ul.email li i {
      padding-top: 15px !important;
      line-height: 30px;
      font-size: 17px;
-     color: #4F6F52;
+     color: #262626;
 }
 
 .skating-box figure {
@@ -679,7 +681,7 @@ ul.email li i {
 /** testimonial **/
 
 .testimonial {
-     background: #919191;
+     background: #524C42;
      padding: 90px 0;
      margin-top: 90px;
 }
@@ -717,7 +719,7 @@ ul.email li i {
 #myCarousel a.carousel-control-prev:focus,
 #myCarousel a.carousel-control-prev:hover {
      color: #fff;
-     background: #4F6F52;
+     background: #4F6F52d4;
      opacity: 1;
 }
 
@@ -917,7 +919,7 @@ ul.conta li a {
 }
 
 .subsci_btn:hover {
-     background-color: #919191;
+     background-color: #524C42;
      transition: ease-in all 0.5s;
      color: #fff;
 }
@@ -1000,7 +1002,7 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-     color: #919191;
+     color: #524C42;
 }
 
 
@@ -1048,7 +1050,7 @@ ul.social_icon li a:hover {
      font-weight: normal;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #4F6F52;
+     box-shadow: 0px 0px 2px 0 #f34b52d4;
 }
 
 .custom-select {
@@ -1057,14 +1059,14 @@ ul.social_icon li a:hover {
      font-size: 17px;
      height: 50px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #4F6F52;
+     box-shadow: 0px 0px 2px 0 #f34b52d4;
      margin-bottom: 20px;
      border-radius: 11px;
 }
 
 .custom-select:focus {
      border: inherit;
-     box-shadow: 0px 0px 2px 0 #4F6F52;
+     box-shadow: 0px 0px 2px 0 #f34b52d4;
 }
 
 .main_form .textarea {
@@ -1078,7 +1080,7 @@ ul.social_icon li a:hover {
      height: 155px;
      border-radius: 11px;
      border: inherit;
-     box-shadow: 0px 0px 2px 0#4F6F52;
+     box-shadow: 0px 0px 2px 0#f34b52d4;
 }
 
 .main_form .send_btn {
@@ -1098,7 +1100,7 @@ ul.social_icon li a:hover {
 }
 
 .main_form .send_btn:hover {
-     background: #919191;
+     background: #524C42;
      color: #fff;
      transition: ease-in all 0.5s;
 }
