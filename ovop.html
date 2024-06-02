@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVOP Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="ovop">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom ovop">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Regolwetan.id</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="stunting.html">Stunting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="literasi-keuangan.html">Literasi Keuangan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puskesos.html">Puskesos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ovop.html">OVOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 ovop">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Produk OVOP">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-primary-custom">Produk OVOP</h2>
+                <p>Produk OVOP kami merupakan produk berkualitas tinggi yang dihasilkan oleh usaha kecil dan menengah di daerah Regolwetan. Produk ini telah melalui berbagai proses kualitas yang ketat untuk memastikan kepuasan pelanggan.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Pilih Alamat Pengiriman</label>
+                        <select class="form-select" id="address">
+                            <option selected>Alamat 1, Kota 1</option>
+                            <option>Alamat 2, Kota 2</option>
+                            <option>Alamat 3, Kota 3</option>
+                        </select>
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addAddressModal">Tambah Alamat</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Kuantitas</label>
+                        <input type="number" class="form-control" id="quantity" value="1" min="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="shipping" class="form-label">Pilih Layanan Pengiriman</label>
+                        <select class="form-select" id="shipping">
+                            <option selected>Reguler</option>
+                            <option>Ekspress</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="buyButton">Beli</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Address Modal -->
+    <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAddressModalLabel">Tambah Alamat Pengiriman</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="newAddress" class="form-label">Alamat Baru</label>
+                            <input type="text" class="form-control" id="newAddress">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="saveAddressButton">Simpan Alamat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Detail Modal -->
+    <div class="modal fade" id="orderDetailModal" tabindex="-1" aria-labelledby="orderDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderDetailModalLabel">Detail Pemesanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="orderDetails">Detail pemesanan Anda:</p>
+                    <button type="button" class="btn btn-primary" id="confirmOrderButton">Konfirmasi Pemesanan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-custom text-white mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li>Telepon: +62 123 4567 890</li>
+                        <li>Email: info@regolwetan.id</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5>Lebih Dekat dengan Kami</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark-custom text-center p-3">
+            <small>© 2024 Regolwetan.id</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
