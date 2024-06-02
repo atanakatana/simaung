@@ -1,0 +1,160 @@
+/* bagian halaman index.html */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 50px; /* Make hover effect oval */
+  padding: 12px 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #DC5F00;
+  color: #ffffff;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.text-primary-custom {
+  color: #DC5F00;
+}
+
+.btn-outline-primary-custom {
+  border-color: #DC5F00;
+  color: #DC5F00;
+}
+
+.btn-outline-primary-custom:hover {
+  background-color: #DC5F00;
+  color: #fff;
+}
+
+.bg-dark-custom {
+  background-color: #373A40 !important;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.partner-frame {
+  border: 1px solid #DC5F00;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.partner-frame:hover {
+  transform: scale(1.1);
+}
+
+.partner-frame a {
+  display: block;
+  text-decoration: none;
+}
+
+.dark-overlay-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.dark-overlay {
+  position: relative;
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  height: 400px;
+}
+
+.dark-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* bagian halaman ovop.html */
+body.ovop {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-dark-custom {
+  background-color: #373A40;
+}
+
+.text-primary-custom {
+  color: #DC5F00;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.partner-frame img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.partner-frame {
+  margin-bottom: 20px;
+}
+
+.ovop .btn-primary {
+  background-color: #DC5F00;
+  border-color: #DC5F00;
+}
+
+.ovop .btn-primary:hover {
+  background-color: #b94d00;
+  border-color: #b94d00;
+}
